@@ -17,6 +17,11 @@ DerivedData/
 !default.perspectivev3
 xcuserdata/
 
+# CocoaPods
+Pods
+Podfile.lock
+tddSwift/tddSwift.xcworkspace/
+
 ## Other
 *.moved-aside
 *.xccheckout

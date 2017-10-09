@@ -14,7 +14,8 @@
 		EDEFF9841F8BC562003748B8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EDEFF9821F8BC562003748B8 /* Main.storyboard */; };
 		EDEFF9861F8BC562003748B8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EDEFF9851F8BC562003748B8 /* Assets.xcassets */; };
 		EDEFF9891F8BC562003748B8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EDEFF9871F8BC562003748B8 /* LaunchScreen.storyboard */; };
-		EDEFF9941F8BC562003748B8 /* tddSwiftTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDEFF9931F8BC562003748B8 /* tddSwiftTests.swift */; };
+		EDEFF99F1F8BCA97003748B8 /* MathHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDEFF99E1F8BCA97003748B8 /* MathHelper.swift */; };
+		EDEFF9A11F8BD11D003748B8 /* MathHelperSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDEFF9A01F8BD11D003748B8 /* MathHelperSpec.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,8 +41,9 @@
 		EDEFF9881F8BC562003748B8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		EDEFF98A1F8BC562003748B8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		EDEFF98F1F8BC562003748B8 /* tddSwiftTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = tddSwiftTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		EDEFF9931F8BC562003748B8 /* tddSwiftTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = tddSwiftTests.swift; sourceTree = "<group>"; };
 		EDEFF9951F8BC562003748B8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EDEFF99E1F8BCA97003748B8 /* MathHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MathHelper.swift; sourceTree = "<group>"; };
+		EDEFF9A01F8BD11D003748B8 /* MathHelperSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MathHelperSpec.swift; sourceTree = "<group>"; };
 		F79A8A9C2AE135D63A5073AA /* Pods-tddSwift.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-tddSwift.debug.xcconfig"; path = "Pods/Target Support Files/Pods-tddSwift/Pods-tddSwift.debug.xcconfig"; sourceTree = "<group>"; };
 		F8FC232F05B65A0142D602CF /* Pods-Tests-tddSwiftTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Tests-tddSwiftTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-Tests-tddSwiftTests/Pods-Tests-tddSwiftTests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -111,6 +113,7 @@
 			children = (
 				EDEFF97E1F8BC562003748B8 /* AppDelegate.swift */,
 				EDEFF9801F8BC562003748B8 /* ViewController.swift */,
+				EDEFF99E1F8BCA97003748B8 /* MathHelper.swift */,
 				EDEFF9821F8BC562003748B8 /* Main.storyboard */,
 				EDEFF9851F8BC562003748B8 /* Assets.xcassets */,
 				EDEFF9871F8BC562003748B8 /* LaunchScreen.storyboard */,
@@ -122,7 +125,7 @@
 		EDEFF9921F8BC562003748B8 /* tddSwiftTests */ = {
 			isa = PBXGroup;
 			children = (
-				EDEFF9931F8BC562003748B8 /* tddSwiftTests.swift */,
+				EDEFF9A01F8BD11D003748B8 /* MathHelperSpec.swift */,
 				EDEFF9951F8BC562003748B8 /* Info.plist */,
 			);
 			path = tddSwiftTests;
@@ -330,6 +333,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EDEFF99F1F8BCA97003748B8 /* MathHelper.swift in Sources */,
 				EDEFF9811F8BC562003748B8 /* ViewController.swift in Sources */,
 				EDEFF97F1F8BC562003748B8 /* AppDelegate.swift in Sources */,
 			);
@@ -339,7 +343,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EDEFF9941F8BC562003748B8 /* tddSwiftTests.swift in Sources */,
+				EDEFF9A11F8BD11D003748B8 /* MathHelperSpec.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

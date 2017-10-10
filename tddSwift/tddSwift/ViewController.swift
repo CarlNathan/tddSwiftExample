@@ -9,17 +9,33 @@
 import UIKit
 
 class ViewController: UIViewController {
-
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+    
+    @IBOutlet var makeMathHappenSwitch: UISwitch!
+    @IBOutlet var meaningOfLifeSwitch: UISwitch!
+    @IBOutlet var resultLabel: UILabel!
+    
+    let mathHelper = MathHelper()
+    var mathArray: Array<Float> = [7.8, 5.0, 3.4, 12.2]
+    
+    @IBAction func makeMathHappenSwitchChangedValue(_ sender: UISwitch) {
+        if sender.isOn && meaningOfLifeSwitch.isOn{
+            self.resultLabel.text = "42"
+            return
+        }
+        resultLabel.text = sender.isOn ? String(mathHelper.sumArray(array: mathArray)) : "No Math"
     }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+    
+    @IBAction func meaningOfLifeSwitchChangedValue(_ sender: UISwitch) {
+        if !makeMathHappenSwitch.isOn { return }
+        
+        if sender.isOn {
+            mathArray.append(42.0)
+        } else {
+            if let indexOf42 = mathArray.index(of: 42) {
+                mathArray.remove(at: indexOf42)
+            }
+        }
+        resultLabel.text = String(mathHelper.sumArray(array: mathArray))
     }
-
-
 }
 

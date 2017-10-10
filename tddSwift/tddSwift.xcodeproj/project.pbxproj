@@ -11,11 +11,13 @@
 		D244F7F3B119C06DE4B3263B /* Pods_tddSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3C3838512B787454B6B801A2 /* Pods_tddSwift.framework */; };
 		EDEFF97F1F8BC562003748B8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDEFF97E1F8BC562003748B8 /* AppDelegate.swift */; };
 		EDEFF9811F8BC562003748B8 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDEFF9801F8BC562003748B8 /* ViewController.swift */; };
-		EDEFF9841F8BC562003748B8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EDEFF9821F8BC562003748B8 /* Main.storyboard */; };
 		EDEFF9861F8BC562003748B8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EDEFF9851F8BC562003748B8 /* Assets.xcassets */; };
 		EDEFF9891F8BC562003748B8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EDEFF9871F8BC562003748B8 /* LaunchScreen.storyboard */; };
 		EDEFF99F1F8BCA97003748B8 /* MathHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDEFF99E1F8BCA97003748B8 /* MathHelper.swift */; };
 		EDEFF9A11F8BD11D003748B8 /* MathHelperSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDEFF9A01F8BD11D003748B8 /* MathHelperSpec.swift */; };
+		EDEFF9A41F8C158B003748B8 /* ViewControllerSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDEFF9A31F8C158B003748B8 /* ViewControllerSpec.swift */; };
+		EDEFF9A81F8C2015003748B8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EDEFF9A71F8C2015003748B8 /* Main.storyboard */; };
+		EDEFF9A91F8C2045003748B8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EDEFF9A71F8C2015003748B8 /* Main.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,7 +38,6 @@
 		EDEFF97B1F8BC562003748B8 /* tddSwift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = tddSwift.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EDEFF97E1F8BC562003748B8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EDEFF9801F8BC562003748B8 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		EDEFF9831F8BC562003748B8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		EDEFF9851F8BC562003748B8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		EDEFF9881F8BC562003748B8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		EDEFF98A1F8BC562003748B8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -44,6 +45,8 @@
 		EDEFF9951F8BC562003748B8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		EDEFF99E1F8BCA97003748B8 /* MathHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MathHelper.swift; sourceTree = "<group>"; };
 		EDEFF9A01F8BD11D003748B8 /* MathHelperSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MathHelperSpec.swift; sourceTree = "<group>"; };
+		EDEFF9A31F8C158B003748B8 /* ViewControllerSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerSpec.swift; sourceTree = "<group>"; };
+		EDEFF9A71F8C2015003748B8 /* Main.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		F79A8A9C2AE135D63A5073AA /* Pods-tddSwift.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-tddSwift.debug.xcconfig"; path = "Pods/Target Support Files/Pods-tddSwift/Pods-tddSwift.debug.xcconfig"; sourceTree = "<group>"; };
 		F8FC232F05B65A0142D602CF /* Pods-Tests-tddSwiftTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Tests-tddSwiftTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-Tests-tddSwiftTests/Pods-Tests-tddSwiftTests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -114,9 +117,9 @@
 				EDEFF97E1F8BC562003748B8 /* AppDelegate.swift */,
 				EDEFF9801F8BC562003748B8 /* ViewController.swift */,
 				EDEFF99E1F8BCA97003748B8 /* MathHelper.swift */,
-				EDEFF9821F8BC562003748B8 /* Main.storyboard */,
 				EDEFF9851F8BC562003748B8 /* Assets.xcassets */,
 				EDEFF9871F8BC562003748B8 /* LaunchScreen.storyboard */,
+				EDEFF9A71F8C2015003748B8 /* Main.storyboard */,
 				EDEFF98A1F8BC562003748B8 /* Info.plist */,
 			);
 			path = tddSwift;
@@ -126,6 +129,7 @@
 			isa = PBXGroup;
 			children = (
 				EDEFF9A01F8BD11D003748B8 /* MathHelperSpec.swift */,
+				EDEFF9A31F8C158B003748B8 /* ViewControllerSpec.swift */,
 				EDEFF9951F8BC562003748B8 /* Info.plist */,
 			);
 			path = tddSwiftTests;
@@ -220,9 +224,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EDEFF9A81F8C2015003748B8 /* Main.storyboard in Resources */,
 				EDEFF9891F8BC562003748B8 /* LaunchScreen.storyboard in Resources */,
 				EDEFF9861F8BC562003748B8 /* Assets.xcassets in Resources */,
-				EDEFF9841F8BC562003748B8 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -230,6 +234,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EDEFF9A91F8C2045003748B8 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -344,6 +349,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				EDEFF9A11F8BD11D003748B8 /* MathHelperSpec.swift in Sources */,
+				EDEFF9A41F8C158B003748B8 /* ViewControllerSpec.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -358,14 +364,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		EDEFF9821F8BC562003748B8 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				EDEFF9831F8BC562003748B8 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		EDEFF9871F8BC562003748B8 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (

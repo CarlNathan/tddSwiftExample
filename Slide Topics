@@ -1,0 +1,35 @@
+Value of TDD
+- Easy to refactor:  You don’t have to worry about  breaking your code when you make changes.
+- More Modular design: This won’t even be intentional.  Code that is easy to test is usually modular.
+- Less debugging: Run tests in stead of digging through complicated code.
+- Only write what you need to.  What is the value of code not needed to pass a test?
+- Documentation: When other engineers look at your tests, they will understand your approach.
+
+Disadvantages:
+- Writing bad tests can give false confidence.
+- Slow at the beginning
+- Everyone needs to do it
+- Tests can be a pain to change as requirements change
+
+Project Standards
+There is no one size fits all description of what a TDD project should look like.  This is an organizational question.  What is important is that all team members follow the same standards.  The workflow suggests that everything should be tested, but in reality, its not all worth the time.  Generally, its most important to test your features - or the things that make you app useful to its users.
+
+
+TDD Concepts
+The TDD Workflow:  Red - Green - Refactor
+Start by writing a failing test.  This could be as simple as calling a method that doesn’t exist on you test subject.  A compile error counts as a failed test.
+
+Next step is writing the simplest code possible to make the test pass.  Resist the temptation to build out the entire feature while you are writing.  Do not write code that will pass future tests in your imagination, just pass the current test.
+
+Last is refactor.  Here is where you focus only on making your code clean.  Tests will inform you if you break anything during your refactor.
+
+Mocks Stubs and Fakes
+
+Libraries
+OBJC
+Swift:
+Quick - Testing inspired by cedar
+Nimble - Matcher framework
+Fakery - Fake data generator
+Mocking - ?? This is a problem in swift.  
+

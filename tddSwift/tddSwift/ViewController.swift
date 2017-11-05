@@ -14,15 +14,15 @@ class ViewController: UIViewController {
     @IBOutlet var meaningOfLifeSwitch: UISwitch!
     @IBOutlet var resultLabel: UILabel!
     
-    let mathHelper = MathHelper()
+    var mathHelper = MathHelper()
     var mathArray: Array<Float> = [7.8, 5.0, 3.4, 12.2]
     
     @IBAction func makeMathHappenSwitchChangedValue(_ sender: UISwitch) {
-        if sender.isOn && meaningOfLifeSwitch.isOn{
+        if sender.isOn, meaningOfLifeSwitch.isOn{
             self.resultLabel.text = "42"
             return
         }
-        resultLabel.text = sender.isOn ? String(mathHelper.sumArray(array: mathArray)) : "No Math"
+        resultLabel.text = sender.isOn ? String(mathHelper.sumArray(array: mathArray)) : mathHelper.doNoMath()
     }
     
     @IBAction func meaningOfLifeSwitchChangedValue(_ sender: UISwitch) {

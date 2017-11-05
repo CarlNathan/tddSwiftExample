@@ -8,7 +8,7 @@
 
 import Foundation
 
-class MathHelper {
+class MathHelper: MathHelperProtocol {
     
     func sumArray(array: Array<Float>) -> Float {
         if array.contains(42.0) {

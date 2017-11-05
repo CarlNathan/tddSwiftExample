@@ -14,7 +14,7 @@ class ViewController: UIViewController {
     @IBOutlet var meaningOfLifeSwitch: UISwitch!
     @IBOutlet var resultLabel: UILabel!
     
-    var mathHelper = MathHelper()
+    var mathHelper: MathHelperProtocol = MathHelper()
     var mathArray: Array<Float> = [7.8, 5.0, 3.4, 12.2]
     
     @IBAction func makeMathHappenSwitchChangedValue(_ sender: UISwitch) {
